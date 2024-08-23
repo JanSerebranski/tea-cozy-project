@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: seashell;
+}
+
+header {
+    background-color: black;
+    padding: 20px 40px; /* Mehr Padding für mehr Abstand zum Rand */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Logo links und Navigation rechts */
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    z-index: 1000;
+}
+
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Abstand zwischen den Links */
+}
+
+nav a {
+    color: seashell;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.mission {
+    background-image: url('mission-background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 69px; /* Anpassung für die fixe Kopfzeile */
+}
+
+.mission h2, .mission h4 {
+    background-color: rgba(0, 0, 0, 0.7); /* Schwarzer halbtransparenter Hintergrund */
+    padding: 10px;
+    border-radius: 5px; /* Abgerundete Ecken für einen sanfteren Look */
+}
+
+.tea-of-the-month {
+    background-color: black;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tea-of-the-month h2 {
+    margin-bottom: 30px; /* Mehr Abstand zwischen den Überschriften */
+}
+
+.tea-of-the-month h4 {
+    margin-bottom: 50px; /* Noch mehr Abstand unterhalb von "What's Steeping..." */
+}
+
+
+.tea-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tea-item {
+    margin: 20px;
+}
+
+.tea-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.locations {
+    background-image: url('locations-background.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.locations h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Abstand zum Rest des Inhalts */
+}
+
+.location-container {
+    display: flex;
+    justify-content: center; /* Zentriert die Location-Boxen */
+    gap: 20px; /* Abstand zwischen den Location-Boxen */
+}
+
+.location-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: seashell;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
